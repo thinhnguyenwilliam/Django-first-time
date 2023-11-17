@@ -1,0 +1,14 @@
+{% extends 'polls/base.html' %}
+{% block content %}
+    <h1> day la suc manh cua ta </h1>
+    <p>chao cac ban dep trai <b>{{name}}</b></p>
+
+    <h2>tai san cua toi gom:</h2>
+    <ul>
+        {% for item in taisan %}
+            {% if item != 'may tinh' %}
+                <li>{{item}}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
